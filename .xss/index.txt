@@ -1,0 +1,3 @@
+./tools/stub-model/src/main/java/org/xpertss/obeya/stubmodel/Reply.java
+./tools/stub-model/src/main/java/org/xpertss/obeya/stubmodel/StubModelServer.java
+./tools/stub-model/src/test/java/org/xpertss/obeya/stubmodel/StubModelServerTest.java
