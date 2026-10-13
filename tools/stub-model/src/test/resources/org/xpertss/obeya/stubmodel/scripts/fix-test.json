@@ -1,0 +1,19 @@
+{
+  "turns": [
+    {
+      "content": [
+        { "type": "thinking", "thinking": "The failing test is in src/math.test.js; read it first.", "signature": "c2lnLXR1cm4tMC1vcGFxdWUtYmxvYg==" },
+        { "type": "text", "text": "Reading the test and the source." },
+        { "type": "tool_use", "id": "toolu_01", "name": "read", "input": { "path": "src/math.test.js" } },
+        { "type": "tool_use", "id": "toolu_02", "name": "read", "input": { "path": "src/math.js" } }
+      ],
+      "usage": { "input_tokens": 1200, "output_tokens": 85, "cache_creation_input_tokens": 1024, "cache_read_input_tokens": 0 }
+    },
+    {
+      "content": [
+        { "type": "text", "text": "Fixed the off-by-one in add()." }
+      ],
+      "usage": { "input_tokens": 40, "output_tokens": 12, "cache_creation_input_tokens": 0, "cache_read_input_tokens": 1024 }
+    }
+  ]
+}
