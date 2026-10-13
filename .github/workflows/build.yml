@@ -87,11 +87,11 @@ jobs:
           npm ci
           npm run build
   integration:
-    name: Fedora integration tests
+    name: Rocky integration tests
     runs-on:
       - self-hosted
       - linux
-      - fedora
+      - rhel9
       - podman
     permissions:
       contents: read

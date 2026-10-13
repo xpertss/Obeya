@@ -129,10 +129,11 @@ project.buildVerifyWorkflow.addJob('spa', {
   ],
 });
 
-// Container integration tests need rootless Podman with cgroup v2 delegation (C-4).
+// Container integration tests need rootless Podman with cgroup v2 delegation (C-4)
+// on the reference deployment distribution: Rocky 9 (Red Hat family, RUN-5).
 project.buildVerifyWorkflow.addJob('integration', {
-  name: 'Fedora integration tests',
-  runsOn: ['self-hosted', 'linux', 'fedora', 'podman'],
+  name: 'Rocky integration tests',
+  runsOn: ['self-hosted', 'linux', 'rhel9', 'podman'],
   permissions: { contents: github.workflows.JobPermission.READ },
   steps: [
     { name: 'Checkout', uses: 'actions/checkout@v7' },
