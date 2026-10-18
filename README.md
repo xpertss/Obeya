@@ -20,7 +20,7 @@ GitHub-Actions-grade observability into what each agent did and why.
 | `tools/stub-model/` | Scripted Anthropic Messages model endpoint for CI and spikes |
 | `web/` | Vue 3 + TypeScript + Vite SPA |
 | `images/` | Containerfile for the job base image |
-| `packaging/rpm/` | RPM spec and `obeya-setup` |
+| `packaging/rpm/` | RPM package set and `obeya-setup` |
 | `evals/` | Coder task suite for the harness quality bar |
 | `e2e/` | End-to-end suite against the `xpertss-test` GitHub org |
 
